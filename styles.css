@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: grey;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 25px 0;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 300px;
+    height: min-content;
+}
+
+.mainCard {
+    display: flex;
+    background-color: #fff;
+    flex-direction: column;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    padding: 15px;
+}
+
+.description {
+    max-width: 300px;
+}
+
+.description p {
+    letter-spacing: .2px;
+    font-size: 19px;
+    padding: 5px 2.5px;
+}
+
+.likeComment {
+    text-decoration: underline;
+
+}
+
+.action {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.action button {
+    margin: 5px 1.5px;
+    text-decoration: none;
+    border: none;
+    padding: 3.5px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 2.5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.action button:hover {
+    opacity: 0.7;
+}
+
+.action a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.card .textArea {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.card .textArea.hidden {
+    display: none;
+}
+
+.cardHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 300px;
+    margin: 10px 0;
+}
+
+.cardHeader .category {
+    font-size: 14px;
+    background-color: green;
+    border-radius: 10px;
+    padding: 2.5px 5px;
+    color: #fff;
+}
+
+.info {
+    display: flex;
+}
+
+.info p {
+    font-size: 10.5px;
+    margin: 2px;
+    width: fit-content;
+    padding: 2.5px;
+    border: 1px solid rgb(255, 201, 135);
+    border-radius: 10px;
+    background-color: bisque;
+}
+
+.scroll-container {
+    margin: 5px auto;
+    width: 300px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    max-height: 150px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.scroll-container .comment {
+    margin: 5px auto;
+    padding: 2.5px;
+    border: 1px solid #000;
+    border-radius: 2.5px;
+    width: 275px;
+}
+
+.authorDetails {
+    display: flex;
+}
+
+input {
+    outline: none;
+}
+
+input.error {
+    border: .5px solid red;
+    color: #000;
+}
+
+textarea {
+    padding: 2.5px;
+}
+
+img {
+    border-radius: 10px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 10px;
+    background-color: #fff;
+}
+
+.header nav ul a {
+    background-color: #000;
+    color: #fff;
+    border-radius: 7.5px;
+    padding: 5px 5px;
+    text-decoration: none;
+}
+
+.header nav ul a:hover {
+    opacity: .7;
+}
+
+.inactive {
+    color: grey;
+}
+
+i {
+    cursor: pointer;
+}
+
+.active {
+    color: black;
+}
+
+.welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.welcome h3 {
+    background-color: #fff;
+    padding: 5px 10px;
+}
+
+.aboutUs {
+    margin: auto 100px;
+}
+
+.items {
+    text-transform: capitalize;
+}
+
+.success {
+    color: green;
+}
+
+.error {
+    color: red;
+}
